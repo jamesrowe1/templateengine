@@ -1,0 +1,31 @@
+.card {
+  margin: 10px;
+}
+
+.card-header {
+  background-color: blue;
+  color: white;
+}
+
+.card-body {
+  background-color: red;
+}
+
+.list-group-item {
+  background-color: lemonchiffon;
+}
+
+body {
+  background-color: lightcoral;
+}
+
+.jumbotron {
+  background-color: orange;
+  color: blue;
+}
+
+@media only screen and (min-width: 576px) {
+  .col-md-12 {
+    display: flex;
+  }
+}

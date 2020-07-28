@@ -128,12 +128,10 @@ async function addMoreEmployees() {
       break;
     case "Stop Adding More Employees":
       //if no more employees, render
-      console.log(employeeArray);
       callRender();
       break;
     default:
       console.log("No switch was found");
-      console.log(addMore[0]);
       break;
   }
 }
@@ -142,7 +140,6 @@ async function addMoreEmployees() {
 function callRender() {
   //create html from the render function
   const newHTML = render(employeeArray);
-  console.log(newHTML);
 
   //write the html to the correct file
   fs.writeFile(outputPath, newHTML, (err) => {
