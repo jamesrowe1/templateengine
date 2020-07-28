@@ -77,6 +77,7 @@ const typeOfEmployeeQuestions = [
 //do at start
 async function init() {
   //get questions answers for manager
+  console.log("Enter the information about the Manager");
   const managerAnswers = await inquirer.prompt(managerQuestions);
   //create a new manager object called groupManager
   const groupManager = new Manager(
@@ -99,6 +100,7 @@ async function addMoreEmployees() {
   switch (addMore.addEmployee) {
     //if engineer, ask all the engineer questions and create an engineer object
     case "Engineer":
+      console.log("Enter the information about the new Engineer");
       const engineerAnswers = await inquirer.prompt(engineerQuestions);
       const newEngineer = new Engineer(
         engineerAnswers.name,
@@ -113,6 +115,7 @@ async function addMoreEmployees() {
       break;
     case "Intern":
       //if intern, ask intern questions
+      console.log("Enter the information about the new Intern");
       const internAnswers = await inquirer.prompt(internQuestions);
       //create intern object with answers from above
       const newIntern = new Intern(
@@ -143,7 +146,7 @@ function callRender() {
 
   //write the html to the correct file
   fs.writeFile(outputPath, newHTML, (err) => {
-    console.log(err);
+    console.log("HTML Document Generated");
   });
 }
 //run app.js

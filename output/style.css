@@ -23,9 +23,3 @@ body {
   background-color: orange;
   color: blue;
 }
-
-@media only screen and (min-width: 576px) {
-  .col-md-12 {
-    display: flex;
-  }
-}
