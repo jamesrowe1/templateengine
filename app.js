@@ -82,15 +82,19 @@ async function init() {
     managerAnswers.email,
     managerAnswers.officeNumber
   );
+  //add groupManager to the employee array
   employeeArray.push(groupManager);
+  //add more engineers or interns
   addMoreEmployees();
 
   //render employeeArray
 }
 
 async function addMoreEmployees() {
+    //ask which type of employee you are adding
   let addMore = await inquirer.prompt(typeOfEmployeeQuestions);
 
+  //
   switch (addMore.addEmployee) {
     case "Engineer":
       const engineerAnswers = await inquirer.prompt(engineerQuestions);
