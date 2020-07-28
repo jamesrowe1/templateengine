@@ -6,8 +6,8 @@ templateengine
 
 ## Project Link
 
-https://github.com/jamesrowe1/templateengine
-https://www.youtube.com/watch?v=qDX6PP2UyB4
+- https://github.com/jamesrowe1/templateengine
+- https://www.youtube.com/watch?v=qDX6PP2UyB4
 
 ## Screenshot
 
@@ -28,8 +28,8 @@ You must have node installed in your terminal. Experience with node is suggested
 - Visual Studio Code
 - JavaScript
 - Node
-  -File system ("fs")
-  -path
+  - File system ("fs")
+  - path
 - NPM
   - inquirer
   - jest
